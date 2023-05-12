@@ -1,10 +1,14 @@
+import { BrowserRouter as Router } from 'react-router-dom'
 import React from 'react';
-import Banner from './components/Banner/ Banner';
+import './index.css';
+import Header from "./components/Header/Header";
 function App() {
   return (
-    <div className="App">
-      <Banner />
-    </div>
+      <Router>
+        <div className={'App'}>
+          <Header />
+        </div>
+      </Router>
   );
 }
 
