@@ -1,12 +1,16 @@
 import './Styles.css';
-function DropDown() {
+import LabelDropDown from "./LabelDropDown";
+import {LabelsDropDown} from "./LabelDropDownModel";
+function DropDown(properties: { values: Array<LabelsDropDown>, name: string }) {
+    let labels: Array<LabelsDropDown> = [];
+    properties.values.forEach((value: LabelsDropDown) => {
+        labels.push({destiny: value.destiny, name: value.name});
+    });
     return (
         <div className='dropdown-categories'>
-            <button className={'dropdown-button'}>Categorias</button>
+            <button className={'dropdown-button'}>{properties.name}</button>
             <div className={'dropdown-content'}>
-                <a href='#'>Lanches</a>
-                <a href='#'>Almoço</a>
-                <a href='#'>Janta</a>
+                {labels.map((label, index) => <LabelDropDown name={label['destiny']} destiny={label['name']}/> )}
             </div>
         </div>
     );
