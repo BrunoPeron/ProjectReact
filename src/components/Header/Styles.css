@@ -1,5 +1,5 @@
 .header-main {
-    background: black;
+    background: #042940;
 }
 
 .header-page {
@@ -9,6 +9,7 @@
     margin-right: 5%;
     margin-left: 5%;
     padding: 0.8% 0 0.8%;
+    flex-wrap: wrap;
 }
 
 .header-user {
@@ -16,7 +17,19 @@
     border: 1px solid;
 }
 
-.dropdown-categories {
+.header-button-nav {
+    color: #D6D58E;
+    padding: 16px 3em;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background: #005C53;
+    border-radius: 0.8em;
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
 }
@@ -29,16 +42,21 @@
 }
 
 .dropdown-user .dropdown-button{
-    background: blue;
+    background: #005C53;
     border-radius: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
-.dropdown-categories .dropdown-button{
-    background: blue;
+
+.dropdown .dropdown-button{
+    background: #005C53;
     border-radius: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .dropdown-button {
-    color: white;
+    color: #D6D58E;
     padding: 16px;
     font-size: 16px;
     border: none;

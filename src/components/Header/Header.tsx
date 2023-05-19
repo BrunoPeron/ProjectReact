@@ -7,19 +7,20 @@ function Header() {
         <header className={'header-main'}>
             <nav className={'header-page'}>
                 <Link to={"/"}>
-                    <h1>Home Page</h1>
+                    <div className={'header-button-nav'}>Home page</div>
                 </Link>
-                <DropDown name={'Categorias'} values={[{destiny:'aaaa', name:'ss'}, {destiny:'aaaa', name:'ss'}]}/>
+                <DropDown name={'Categoriasx'} values={[
+                    {destiny:'ddd', name:'xxs'}, {destiny:'aaaa', name:'ss'}
+                ]}/>
                 <Link to={"/"}>
-                    Cadastrar receitas
+                    <div className={'header-button-nav'}>Cadastrar receitas</div>
                 </Link>
                 <Link to={"/"}>
-                    Inventar receitas
+                    <div className={'header-button-nav'}>Inventar receitas</div>
                 </Link>
                 <User />
             </nav>
         </header>
     );
 }
-
 export default Header
